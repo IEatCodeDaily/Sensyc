@@ -14,11 +14,12 @@ log = logging.getLogger()
 log.setLevel(logging.DEBUG)
 hex_file = open('outhex.txt', 'w')
 
+
 #Client setting
 client = ModbusSerialClient(method='rtu', port='COM3', timeout=1, baudrate=9600)
 
 #Slave Adress
-UNIT = 0
+UNIT = 2
 
 
 #======== Addresses TriOS LISA UV ============
